@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: url('space.gif');
+    background-repeat: no-repeat;
+   background-size: cover;
+    
+}
+.container{
+    width: 100%;
+    min-height:100vh;
+    
+    padding: 10px;
+}
+.todolist{
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    margin:100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+
+}
+.todolist h1{
+    color: rgb(191, 0, 255);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+
+
+}
+.todolist h1 img{
+    width: 50px;
+    margin-left: 10px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(214, 223, 223);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 30px;
+
+}
+button{
+    border: none;
+    outline: none;
+    padding:20px;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+ul li{
+    list-style: none;
+    font-size: 30px;
+    padding: 10px  8px 12px 50px;
+    user-select: none;
+    position: relative;
+
+}
+ul li::before{
+    content: " ";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(check-box-empty.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left: 8px;
+}
+ul li.ckecked{
+    color: rgb(158, 146, 146);
+    text-decoration: line-through;
+}
+ul li.ckecked::before{
+    background-image: url(check-box-with-check-sign.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 40px;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+ul li span:hover{
+    background-color: rgb(172, 167, 167);
+
+
+}
